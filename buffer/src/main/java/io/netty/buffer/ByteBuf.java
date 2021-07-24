@@ -575,7 +575,7 @@ public abstract class ByteBuf implements ReferenceCounted, Comparable<ByteBuf> {
      *         if the specified {@code index} is less than {@code 0} or
      *         {@code index + 1} is greater than {@code this.capacity}
      */
-    public abstract byte  getByte(int index);
+    public abstract byte getByte(int index);
 
     /**
      * Gets an unsigned byte at the specified absolute {@code index} in this
@@ -642,7 +642,7 @@ public abstract class ByteBuf implements ReferenceCounted, Comparable<ByteBuf> {
      *         if the specified {@code index} is less than {@code 0} or
      *         {@code index + 3} is greater than {@code this.capacity}
      */
-    public abstract int   getMedium(int index);
+    public abstract int getMedium(int index);
 
     /**
      * Gets a 24-bit medium integer at the specified absolute {@code index} in
@@ -664,7 +664,7 @@ public abstract class ByteBuf implements ReferenceCounted, Comparable<ByteBuf> {
      *         if the specified {@code index} is less than {@code 0} or
      *         {@code index + 3} is greater than {@code this.capacity}
      */
-    public abstract int   getUnsignedMedium(int index);
+    public abstract int getUnsignedMedium(int index);
 
     /**
      * Gets an unsigned 24-bit medium integer at the specified absolute
@@ -676,7 +676,7 @@ public abstract class ByteBuf implements ReferenceCounted, Comparable<ByteBuf> {
      *         if the specified {@code index} is less than {@code 0} or
      *         {@code index + 3} is greater than {@code this.capacity}
      */
-    public abstract int   getUnsignedMediumLE(int index);
+    public abstract int getUnsignedMediumLE(int index);
 
     /**
      * Gets a 32-bit integer at the specified absolute {@code index} in
@@ -687,7 +687,7 @@ public abstract class ByteBuf implements ReferenceCounted, Comparable<ByteBuf> {
      *         if the specified {@code index} is less than {@code 0} or
      *         {@code index + 4} is greater than {@code this.capacity}
      */
-    public abstract int   getInt(int index);
+    public abstract int getInt(int index);
 
     /**
      * Gets a 32-bit integer at the specified absolute {@code index} in
@@ -698,7 +698,7 @@ public abstract class ByteBuf implements ReferenceCounted, Comparable<ByteBuf> {
      *         if the specified {@code index} is less than {@code 0} or
      *         {@code index + 4} is greater than {@code this.capacity}
      */
-    public abstract int   getIntLE(int index);
+    public abstract int getIntLE(int index);
 
     /**
      * Gets an unsigned 32-bit integer at the specified absolute {@code index}
@@ -709,7 +709,7 @@ public abstract class ByteBuf implements ReferenceCounted, Comparable<ByteBuf> {
      *         if the specified {@code index} is less than {@code 0} or
      *         {@code index + 4} is greater than {@code this.capacity}
      */
-    public abstract long  getUnsignedInt(int index);
+    public abstract long getUnsignedInt(int index);
 
     /**
      * Gets an unsigned 32-bit integer at the specified absolute {@code index}
@@ -720,7 +720,7 @@ public abstract class ByteBuf implements ReferenceCounted, Comparable<ByteBuf> {
      *         if the specified {@code index} is less than {@code 0} or
      *         {@code index + 4} is greater than {@code this.capacity}
      */
-    public abstract long  getUnsignedIntLE(int index);
+    public abstract long getUnsignedIntLE(int index);
 
     /**
      * Gets a 64-bit long integer at the specified absolute {@code index} in
@@ -731,7 +731,7 @@ public abstract class ByteBuf implements ReferenceCounted, Comparable<ByteBuf> {
      *         if the specified {@code index} is less than {@code 0} or
      *         {@code index + 8} is greater than {@code this.capacity}
      */
-    public abstract long  getLong(int index);
+    public abstract long getLong(int index);
 
     /**
      * Gets a 64-bit long integer at the specified absolute {@code index} in
@@ -742,7 +742,7 @@ public abstract class ByteBuf implements ReferenceCounted, Comparable<ByteBuf> {
      *         if the specified {@code index} is less than {@code 0} or
      *         {@code index + 8} is greater than {@code this.capacity}
      */
-    public abstract long  getLongLE(int index);
+    public abstract long getLongLE(int index);
 
     /**
      * Gets a 2-byte UTF-16 character at the specified absolute
@@ -753,7 +753,7 @@ public abstract class ByteBuf implements ReferenceCounted, Comparable<ByteBuf> {
      *         if the specified {@code index} is less than {@code 0} or
      *         {@code index + 2} is greater than {@code this.capacity}
      */
-    public abstract char  getChar(int index);
+    public abstract char getChar(int index);
 
     /**
      * Gets a 32-bit floating point number at the specified absolute
@@ -1366,7 +1366,7 @@ public abstract class ByteBuf implements ReferenceCounted, Comparable<ByteBuf> {
      * @throws IndexOutOfBoundsException
      *         if {@code this.readableBytes} is less than {@code 1}
      */
-    public abstract byte  readByte();
+    public abstract byte readByte();
 
     /**
      * Gets an unsigned byte at the current {@code readerIndex} and increases
@@ -1403,7 +1403,7 @@ public abstract class ByteBuf implements ReferenceCounted, Comparable<ByteBuf> {
      * @throws IndexOutOfBoundsException
      *         if {@code this.readableBytes} is less than {@code 2}
      */
-    public abstract int   readUnsignedShort();
+    public abstract int readUnsignedShort();
 
     /**
      * Gets an unsigned 16-bit short integer at the current {@code readerIndex}
@@ -1413,7 +1413,7 @@ public abstract class ByteBuf implements ReferenceCounted, Comparable<ByteBuf> {
      * @throws IndexOutOfBoundsException
      *         if {@code this.readableBytes} is less than {@code 2}
      */
-    public abstract int   readUnsignedShortLE();
+    public abstract int readUnsignedShortLE();
 
     /**
      * Gets a 24-bit medium integer at the current {@code readerIndex}
@@ -1422,7 +1422,7 @@ public abstract class ByteBuf implements ReferenceCounted, Comparable<ByteBuf> {
      * @throws IndexOutOfBoundsException
      *         if {@code this.readableBytes} is less than {@code 3}
      */
-    public abstract int   readMedium();
+    public abstract int readMedium();
 
     /**
      * Gets a 24-bit medium integer at the current {@code readerIndex}
@@ -1432,7 +1432,7 @@ public abstract class ByteBuf implements ReferenceCounted, Comparable<ByteBuf> {
      * @throws IndexOutOfBoundsException
      *         if {@code this.readableBytes} is less than {@code 3}
      */
-    public abstract int   readMediumLE();
+    public abstract int readMediumLE();
 
     /**
      * Gets an unsigned 24-bit medium integer at the current {@code readerIndex}
@@ -1441,7 +1441,7 @@ public abstract class ByteBuf implements ReferenceCounted, Comparable<ByteBuf> {
      * @throws IndexOutOfBoundsException
      *         if {@code this.readableBytes} is less than {@code 3}
      */
-    public abstract int   readUnsignedMedium();
+    public abstract int readUnsignedMedium();
 
     /**
      * Gets an unsigned 24-bit medium integer at the current {@code readerIndex}
@@ -1451,7 +1451,7 @@ public abstract class ByteBuf implements ReferenceCounted, Comparable<ByteBuf> {
      * @throws IndexOutOfBoundsException
      *         if {@code this.readableBytes} is less than {@code 3}
      */
-    public abstract int   readUnsignedMediumLE();
+    public abstract int readUnsignedMediumLE();
 
     /**
      * Gets a 32-bit integer at the current {@code readerIndex}
@@ -1460,7 +1460,7 @@ public abstract class ByteBuf implements ReferenceCounted, Comparable<ByteBuf> {
      * @throws IndexOutOfBoundsException
      *         if {@code this.readableBytes} is less than {@code 4}
      */
-    public abstract int   readInt();
+    public abstract int readInt();
 
     /**
      * Gets a 32-bit integer at the current {@code readerIndex}
@@ -1470,7 +1470,7 @@ public abstract class ByteBuf implements ReferenceCounted, Comparable<ByteBuf> {
      * @throws IndexOutOfBoundsException
      *         if {@code this.readableBytes} is less than {@code 4}
      */
-    public abstract int   readIntLE();
+    public abstract int readIntLE();
 
     /**
      * Gets an unsigned 32-bit integer at the current {@code readerIndex}
@@ -1479,7 +1479,7 @@ public abstract class ByteBuf implements ReferenceCounted, Comparable<ByteBuf> {
      * @throws IndexOutOfBoundsException
      *         if {@code this.readableBytes} is less than {@code 4}
      */
-    public abstract long  readUnsignedInt();
+    public abstract long readUnsignedInt();
 
     /**
      * Gets an unsigned 32-bit integer at the current {@code readerIndex}
@@ -1489,7 +1489,7 @@ public abstract class ByteBuf implements ReferenceCounted, Comparable<ByteBuf> {
      * @throws IndexOutOfBoundsException
      *         if {@code this.readableBytes} is less than {@code 4}
      */
-    public abstract long  readUnsignedIntLE();
+    public abstract long readUnsignedIntLE();
 
     /**
      * Gets a 64-bit integer at the current {@code readerIndex}
@@ -1498,7 +1498,7 @@ public abstract class ByteBuf implements ReferenceCounted, Comparable<ByteBuf> {
      * @throws IndexOutOfBoundsException
      *         if {@code this.readableBytes} is less than {@code 8}
      */
-    public abstract long  readLong();
+    public abstract long readLong();
 
     /**
      * Gets a 64-bit integer at the current {@code readerIndex}
@@ -1508,7 +1508,7 @@ public abstract class ByteBuf implements ReferenceCounted, Comparable<ByteBuf> {
      * @throws IndexOutOfBoundsException
      *         if {@code this.readableBytes} is less than {@code 8}
      */
-    public abstract long  readLongLE();
+    public abstract long readLongLE();
 
     /**
      * Gets a 2-byte UTF-16 character at the current {@code readerIndex}
@@ -1517,7 +1517,7 @@ public abstract class ByteBuf implements ReferenceCounted, Comparable<ByteBuf> {
      * @throws IndexOutOfBoundsException
      *         if {@code this.readableBytes} is less than {@code 2}
      */
-    public abstract char  readChar();
+    public abstract char readChar();
 
     /**
      * Gets a 32-bit floating point number at the current {@code readerIndex}
